@@ -2,10 +2,6 @@
 
 ## Comprehensive Analysis of Non Redundant Protein Database
 
-### Dataset: Non Redundant (NR) and CD-HIT clustering information
-* Protobuffer schema and the step by step data generation is shown [here](https://github.com/boalang/NR_Dataset/blob/master/supplemental/Data_Generation.md).
-* [JSON files version of NR for MongoDB](supplemental/MongoDB.md)
-
 ## Boa<sub>g</sub>: Boa for genomics
 
 Boa<sub>g</sub> is a domain-specific language and infrastructure on top of Hadoop for genomics data.
@@ -13,6 +9,11 @@ The infrastructure is publicely available here: http://boa.cs.iastate.edu/boag/i
 
 Boa<sub>g</sub> example on the infrastructure: 
 http://boa.cs.iastate.edu/examples/boag/index.php
+
+
+### Dataset: Non Redundant (NR) and CD-HIT clustering information
+Protobuffer schema and the step by step data generation is shown [here](https://github.com/boalang/NR_Dataset/blob/master/supplemental/Data_Generation.md).
+
 
 
 ## Boa<sub>g</sub> Compiler source code
