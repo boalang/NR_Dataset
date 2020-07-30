@@ -1,0 +1,68 @@
+package boa.types;
+
+option optimize_for =SPEED;
+
+message Genome{
+	required string refseq=1;
+    required string taxid=2;
+	repeated Sequence sequence=3;
+	optional AssemblerRoot assemblerRoot=4;
+
+}
+
+message Sequence 
+{
+	required string refseq =1;
+	required string accession=2;
+	required string header=3;
+	optional FeatureRoot featureRoot=4;
+}
+
+
+message AssemblerRoot{
+	optional string refseq=1;
+	repeated Assembler assembler=2;      
+	optional int64 total_length=3;
+	optional int64 scaffold_count=4;  
+	optional int64 scaffold_N50=5;
+	optional int64 contig_N50=6;
+	optional int64 contig_count=7;
+	optional int64 total_gap_length=8;
+}
+
+message Assembler{
+   	required string refseq =1;
+   	required string name=2;
+	required string desc=3;
+
+}
+
+message FeatureRoot{
+
+    optional string refseq=1;
+    repeated Feature feature=2;
+}
+
+message Feature {
+	required string id=1;
+    required string accession=2;
+	required string seqid=3;
+	required string source=4;
+	required string ftype=5;
+	required int64 start=6;
+	required int64 end=7;
+	required string score=8;
+	required string strand=9;
+	required string phase=10;
+	repeated Attribute attribute=11;
+	optional string parent=12;
+
+}
+
+message Attribute{
+  	required string id=1;
+	required string tag=2;
+	required string value=3;
+
+}
+
