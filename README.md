@@ -19,14 +19,10 @@ Protobuffer schema and the step by step data generation is shown [here](https://
 BoaG can be integrated with jupyter notebook. 
 The output can easily be further analyzed with R, Python, Bash, Perl, etc.
 The most time-consuming part of the analysis is done via the BoaG infrastructure. 
-Following shows some applications of BoaG via Jupyter notebooks that we used BoaG to run experiment at scale: 
-- TODO 1
-- TODO2  (R Example by Andrew?)
-
 More examples can be found in the  [jupyter notebooks folder](jupyter_notebooks).
 
 ## BoaG Compiler source code
-* BoaG compiler is written in Java. See the [source code](compiler)
+BoaG compiler is written in Java and the source code is available [here](compiler)
 * This is a video on step by step instructions to set up programming environment on Eclipse for Boa compiler. [link](https://www.youtube.com/watch?v=s4-xfprwJ0c)
 
 
